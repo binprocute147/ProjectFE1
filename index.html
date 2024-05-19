@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project FE1 </title>
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- key map -->
+    <script
+        src='https://www.bing.com/api/maps/mapcontrol?key=Al25XDoGEkcJ7iA2bVKSHJdEwKA39liqeLGRD9064ojdoK9TaoPRB2k6Q2sSeljI&callback=initMap'
+        async defer>
+        </script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- banner images -->
+        <div class="position-relative">
+            <img id="myImage" src="public/images/1.jpg" alt="#" class="w-100 img-fluid">
+        </div>
+        <button id="prevBtn" class="position-absolute top-50 start-0 translate-middle-y d-none d-sm-block">
+            < </button>
+                <button id="nextBtn" class="position-absolute top-50 end-0 translate-middle-y d-none d-sm-block"> >
+                </button>
+                <!-- navbar -->
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white">
+                    <div class="container">
+                        <a class="navbar-brand pe-5" href="index.html"><img src="public/images/logo.png" alt="Logo"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item pe-3">
+                                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                                </li>
+                                <li class="nav-item pe-3 bg-menu">
+                                    <a class="nav-link" href="#">ABOUT US</a>
+                                </li>
+                                <li class="nav-item pe-3 bg-menu">
+                                    <a class="nav-link" href="#">SERVICE RATES</a>
+                                </li>
+                                <li class="nav-item pe-3 bg-menu">
+                                    <a class="nav-link" href="#">OUR SERVICES</a>
+                                </li>
+                                <li class="nav-item pe-3 bg-menu">
+                                    <a class="nav-link" href="#">OUT CARS</a>
+                                </li>
+                                <li class="nav-item pe-3 bg-menu">
+                                    <a class="nav-link" href="#">PAGES</a>
+                                </li>
+                                <li class="nav-item pe-3 bg-menu">
+                                    <a class="nav-link" href="#">BLOG</a>
+                                </li>
+                                <li class="nav-item pe-3 bg-menu">
+                                    <a class="nav-link" href="#">CONTACT US</a>
+                                </li>
+                                <li class="nav-item pe-1 ">
+                                    <a class="nav-link icon-search" href="#">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="info-car text-white">
+                    <p>LUXURY CAR RENTAL</p>
+                    <h2>
+                        FERRARI 458 SPECIALE
+                    </h2>
+                    <h5 class="py-2">
+                        starting from $299 per day
+                    </h5>
+                    <div class="pt-2">
+                        <a href="https://www.ferrari.com/en-EN/auto/458-speciale"
+                            class="text-decoration-none px-3 py-2 text-dark showproces">
+                            &gt; SHOW PRICES</a>
+                    </div>
+                </div>
+                <div class="banner py-5 ">
+                    <div class="container pt-4">
+                        <div class="row">
+                            <div class="col-12 col-md-3 text-center">
+                                <a href=""><img src="public/images/1.png" alt="#"></a>
+                                <p class="pt-2">
+                                    Mercedes Grand Sedan
+                                </p>
+                                <a class="item-price text-decoration-none text-white px-1 py-1"
+                                    href="https://www.chevrolet.com/suvs/tahoe">starting from $120</a>
+                            </div>
+                            <div class="col-12 col-md-3 pt-5 pt-md-0 text-center">
+                                <a href=""><img src="public/images/2.png" alt="#"></a>
+                                <p class="pt-2">
+                                    Mercedes Grand Sedan
+                                </p>
+                                <a class="item-price text-decoration-none text-white px-1 py-1"
+                                    href="https://www.chevrolet.com/suvs/tahoe">starting from $120</a>
+                            </div>
+                            <div class="col-12 col-md-3 pt-5 pt-md-0 text-center">
+                                <a href=""><img src="public/images/3.png" alt="#"></a>
+                                <p class="pt-2">
+                                    Mercedes Grand Sedan
+                                </p>
+                                <a class="item-price text-decoration-none text-white px-1 py-1"
+                                    href="https://www.chevrolet.com/suvs/tahoe">starting from $120</a>
+                            </div>
+                            <div class="col-12 col-md-3 pt-5 pt-md-0 text-center">
+                                <a href=""><img src="public/images/4.png" alt="#"></a>
+                                <p class="pt-2">
+                                    Mercedes Grand Sedan
+                                </p>
+                                <a class="item-price text-decoration-none text-white px-1 py-1"
+                                    href="https://www.chevrolet.com/suvs/tahoe">starting from $120</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </header>
+    <!-- endheader -->
+
+    <!-- content -->
+    <div class="content pt-5">
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-12">
+                    <div>
+                        <h2 class="text-center">WELCOME TO GENURENT</h2>
+                        <hr class="hr mt-3">
+                        <p class="py-4 text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container pt-2 pb-5">
+            <div class="row ">
+                <div class="col-12 col-md-6 pb-3 pb-md-0 py-1">
+                    <div class="border p-3">
+                        <div class="d-flex">
+                            <img src="public/images/1-1.png" alt="#">
+                            <h5 class="pt-2 ps-4">
+                                Car dealer number one world wide
+                            </h5>
+                        </div>
+                        <p class="pt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor
+                            invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores
+                            et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 pb-3 pb-md-0 py-1">
+                    <div class="border p-3">
+                        <div class="d-flex">
+                            <img src="public/images/2-1.png" alt="#">
+                            <h5 class="pt-2 ps-4">
+                                We are about your sercurity in our cars
+                            </h5>
+                        </div>
+                        <p class="pt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor
+                            invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores
+                            et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="pt-4 position-relative">
+            <img id="content-img" src="public/images/texture-1.jpg" alt="#" class="w-100">
+            <div id="bg-container" class="container position-absolute bg-container">
+                <div class="row">
+                    <div id="my-ps" class="col-12 col-md-6 text-white my-ps">
+                        <h2>
+                            Out Most Important
+                        </h2>
+                        <h3>
+                            Prices & Awards
+                        </h3>
+                    </div>
+                    <div class="col-6 col-md-2 text-white">
+                        <img class="img-fluid" src="public/images/3 (1).png" alt="#">
+                        <div>
+                            <p class="pt-2">
+                                First Class Cars
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2 text-white">
+                        <img class="ms-5 img-fluid" src="public/images/4 (1).png" alt="#">
+                        <p class="pt-2">
+                            Number One Dealer
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-2 text-white">
+                        <img class="mt-3 ms-3 img-fluid" src="public/images/5.png" alt="#">
+                        <div class="">
+                            <p class="pt-4">
+                                Rated with 5 stars
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-relative">
+            <img id="img-contents" src="public/images/background-1.jpg" alt="#" class="w-100">
+            <div id="bg-container" class="container position-absolute bg-container ">
+                <div id="row-ms" class="row bg-white py-5 row-ms">
+                    <div class="col-12 col-md-12">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <h3 class="ps-3">
+                                    We offer clean cars<br>for everyone
+                                </h3>
+                                <h5 class="ps-3 my-bg pb-5 pb-md-0">
+                                    fast. cheap. quality. security
+                                </h5>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                    sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row pt-3">
+                <div class="col-12">
+                    <div>
+                        <h2 class="text-center">OUR NEWEST VEHICLES</h2>
+                        <hr class="hr mt-3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class=" d-md-flex pt-4 d-flex flex-wrap justify-content-md-center">
+                                        <a href="#" class="pe-1 text-decoration-none color-text"> All</a>
+                                        <p class="px-2 color-text">
+                                            /
+                                        </p>
+                                        <a href="#" class="pe-1 text-decoration-none color-text">PARTY BUS</a>
+                                        <P class="px-2 color-text">
+                                            /
+                                        </P>
+                                        <a href="#" class="pe-1 text-decoration-none color-text">
+                                            STRETCH LIMO
+                                        </a>
+                                        <p class="px-2 color-text">
+                                            /
+                                        </p>
+                                        <a href="#" class="pe-2 text-decoration-none color-text">SPORT EDITION</a>
+                                        <p class="px-2 color-text">
+                                            /
+                                        </p>
+                                        <a href="#" class="pe-2 text-decoration-none color-text">MUSCLE CAR</a>
+                                        <p class="px-2 color-text">
+                                            /
+                                        </p>
+                                        <a href="#" class="color-text text-decoration-none">SUV LIMO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-3 position-relative d-flex align-items-center justify-content-center">
+            <img id="content-img" src="public/images/background-2.jpg" alt="#" class="w-100 ">
+            <div class="container position-absolute">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h1> WHAT DID OUR CLIENTS SAY</h1>
+                            <hr class="hr mt-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-5 position-relative ">
+            <img id="img-car" src="public/images/newsletter-bg.png" alt="">
+            <div id="bg-containers" class="container bg-containers position-absolute ms-md-5 top-50 py-5">
+                <div class="row ">
+                    <div id="end-content" class="col-12 d-flex">
+                        <h3>
+                            SIGN UP TO OUR NEWSLETTER
+                        </h3>
+                        <div id="custom-email" class="pb-1 custom-email  ms-md-5">
+                            <input type="email" name="" class="border-0 bg-containers" id=""
+                                placeholder="enter your email address">
+                        </div>
+                        <div class="ps-md-3 pt-md-3">
+                            <a href="" class="text-decoration-none text-white py-2 px-2 rounded-pill mys-bg">SIGN UP
+                                NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-md-4 pt-5">
+            <h2 class="text-center">WHAT DID OUR CLIENTS SAY</h2>
+            <hr class="hr mt-3">
+        </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <img src="public/images/map-pin.png" alt="#" height="20px">
+                    <h5 class="ps-2">Rent Location</h5>
+                    <img class="ps-3 pb-2" src="public/images/map-pin-2.png" alt="#" height="40px">
+                    <h5 class="ps-2">Head Office</h5>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+        <div class="bg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3 text-white py-5">
+                        <p class=" pb-2">
+                            ABOUT US
+                        </p>
+                        <hr class="hr-footer">
+                        <p class="while">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt
+                            ut
+                            labore et
+                            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                            et ea
+                            rebum.
+                        </p>
+                        <a href="#">
+                            <img src="public/images/footer-logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3 text-white py-5">
+                        <p class="pb-2">
+                            ABOUT US
+                        </p>
+                        <hr class="hr-footer">
+                        <p>
+                            <i class="fa fa-map-marker"> 115 Westham Street Albony New York </i>
+                        </p>
+                        <p>
+                            <i class="fa fa-phone xam"> +49 123456789</i>
+                        </p>
+                        <p>
+                            <i class="fa fa-phone xam"> +49 123456789</i>
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope"> genurent@email.com</i>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-3 text-white py-5">
+                        <p class="pb-2">
+                            RECENT POSTS
+                        </p>
+                        <hr class="hr-footer">
+                        <p>
+                            <a href="#" class="text-white text-decoration-none"> > We are the best...</a>
+                        </p>
+                        <hr>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none"> > We are the best...</a>
+                        </p>
+                        <hr>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none"> > We are the best...</a>
+                        </p>
+                        <hr>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none"> > We are the best...</a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-3 text-white py-5">
+                        <p class="aboutus">
+                            OUR GALLERY
+                        </p>
+                        <hr class="hr-footer">
+                        <div class="row">
+                            <div class="col-3">
+                                <a href="#">
+                                    <img src="public/images/6-1.jpg" alt="#" width="70px" class="pt-1 pe-1">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#">
+                                    <img src="public/images/5-1.jpg" alt="#" width="70px" class="pt-1 pe-1">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#">
+                                    <img src="public/images/7.jpg" alt="#" width="70px" class="py-1 pe-1">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#">
+                                    <img src="public/images/offer-slider-3.jpg" alt="#" width="72px" class="py-1 pe-1"
+                                        height="60px">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#">
+                                    <img src="public/images/8.jpg" alt="#" width="70px" class="py-2 pe-1">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#">
+                                    <img src="public/images/7.jpg" alt="#" width="70px" class="py-2 pe-1">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#">
+                                    <img src="public/images/6-1.jpg" alt="#" width="70px" class="py-2 pe-1">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#">
+                                    <img src="public/images/5-1.jpg" alt="#" width="70px" class="py-2 ">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- endcontent -->
+
+            <!-- footer -->
+            <footer class="d-flex justify-content-space-between  align-items-center text-white">
+                <p id="foz" class="foz pt-3">
+                    Copyright 2020 &copy; Genurent - Car Renting Service HTML Template | All Rights Reserved
+                </p>
+
+                <div class="social-icons ">
+                    <a href="#">
+                        <i class="fa fa-facebook-official "></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter "></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-google-plus "></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-linkedin "></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-instagram "></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-pinterest-p "></i>
+                    </a>
+                </div>
+            </footer>
+            <!-- endfooter -->
+            <script src="public/js/bootstrap.bundle.min.js"></script>
+            <script src="public/js/app.js"></script>
+</body>
+
+</html>
